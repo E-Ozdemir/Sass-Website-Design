@@ -1,12 +1,61 @@
-@import "navbar";
 @import "reset";
+@import "navbar";
+@import "color";
 
-.inner-container__right{
-    background-image: url(../img/background.svg);
-    background-size: cover;
-    background-repeat: no-repeat;
+.inner-container__right img {
+  height: 100%;
+  width: 100%;
 }
-.container{
-    padding: 3%;
-    
+
+.container {
+  padding: 3%;
+  font-family: "Kumbh Sans", sans-serif;
+  .inner-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .inner-container__left {
+      color: $secondaryColor;
+      font-size: 4rem;
+      & > :first-child {
+        color: $primaryColor;
+      }
+      & :nth-child(3) {
+        font-size: 2rem;
+      }
+      p {
+        margin-bottom: 1rem;
+        font-weight: 900; // to make the text bolder!!!
+      }
+    }
+  }
+  .right {
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    a {
+      text-decoration: none;
+      color: $secondaryColor;
+      &:hover {
+        color: $primaryColor;
+      }
+    }
+  }
+}
+.sign--btn {
+  background-color: $primaryColor;
+  color: $thirtColor;
+  font-family: "Kumbh Sans", sans-serif;
+  padding: 1rem;
+  border-radius: 5px;
+  border: none;
+  font-size: 1rem;
+  font-weight: 200;
+  transition: all 0.8s;
+  &:hover {
+    background-color: $signupHoverColor;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
 }

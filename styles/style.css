@@ -1,3 +1,10 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 .navbar {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -9,27 +16,98 @@
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 10%;
-  font-size: 1rem;
+  font-size: 1.2rem;
+  font-family: 'Kumbh Sans', sans-serif;
+  font-weight: bolder;
 }
 
 .navbar .left h2 {
   font-size: 2rem;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+.navbar .left h2:hover {
+  cursor: pointer;
 }
 
-.inner-container__right {
-  background-image: url(../img/background.svg);
-  background-size: cover;
-  background-repeat: no-repeat;
+.inner-container__right img {
+  height: 100%;
+  width: 100%;
 }
 
 .container {
   padding: 3%;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+.container .inner-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .inner-container .inner-container__left {
+  color: #222121;
+  font-size: 4rem;
+}
+
+.container .inner-container .inner-container__left > :first-child {
+  color: #00cc66;
+}
+
+.container .inner-container .inner-container__left :nth-child(3) {
+  font-size: 2rem;
+}
+
+.container .inner-container .inner-container__left p {
+  margin-bottom: 1rem;
+  font-weight: 900;
+}
+
+.container .right {
+  width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .right a {
+  text-decoration: none;
+  color: #222121;
+}
+
+.container .right a:hover {
+  color: #00cc66;
+}
+
+.sign--btn {
+  background-color: #00cc66;
+  color: #f7f7f7;
+  font-family: "Kumbh Sans", sans-serif;
+  padding: 1rem;
+  border-radius: 5px;
+  border: none;
+  font-size: 1rem;
+  font-weight: 200;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
+.sign--btn:hover {
+  background-color: #fb4b4e;
+  cursor: pointer;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 /*# sourceMappingURL=style.css.map */
