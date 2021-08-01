@@ -85,10 +85,14 @@
 .container .right a {
   text-decoration: none;
   color: #222121;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
 }
 
 .container .right a:hover {
   color: #00cc66;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .sign--btn {
